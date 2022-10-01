@@ -66,7 +66,7 @@ static const struct arg args[] = {
 
 	{ battery_perc,		" ［⚡%s%%",	  "BAT1"},
 	{ battery_state,	"%s|",		  "BAT1"},
-	{ vol_perc,     "🔈%s%%|",             "/dev/mixer"},
+	{ run_command,     "🔈%s%%|",             "pamixer --get-volume"},
 	{ wifi_essid,   "📶%s:",		"wlan0"},
 	{ wifi_perc,    "%s%%］",		"wlan0"},
 	{ cpu_freq,		"［%s",		NULL},
