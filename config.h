@@ -64,16 +64,10 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 
-	{ run_command,     "［🔈%s%%|",             "pamixer --get-volume"},
-	{ wifi_essid,   "📶%s:",		"wlan0"},
-	{ wifi_perc,    "%s%%］",		"wlan0"},
-	{ cpu_freq,		"［%s",		NULL},
-	{ cpu_perc,             "-%s%%］",	NULL},
 	{ ram_used,		"［%s",		NULL},
 	{ ram_perc,             "-%s%%］",	NULL},
-	{ datetime,     "%s",                    "［🗓️%d/%m/%y|🕙%H:%M］"  },
+	{ datetime,     "%s",                    "［%d/%m/%y|%H:%M］"  },
 	{ keymap,       "［%s］†" ,	                    NULL},
-	
 	
 };
 
